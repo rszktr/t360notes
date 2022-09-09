@@ -1,0 +1,109 @@
+body {
+    margin-right: 200px;
+    background-color: white;
+    background-image: url("https://www.w3schools.com/css/img_tree.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+}
+
+/* 2.10. - színátmenetek */
+.icon-blue {
+    background-image: linear-gradient(#135f4e 0%, #69d3f7 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* 2.11. - árnyékok */
+div.polaroid {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+div.container {
+    padding: 10px;
+    font-size: 2em;
+}
+
+div.container p {
+    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
+}
+
+/* 2.12. - betűhatások */
+.overflow1 {
+    white-space: nowrap; /* üres karaktereknél nem  vágja el a szöveget */
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.overflow2 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Három ponttal ... jelzi, hogy a kifutás után a szöveg folytatódik*/
+}
+
+p.wrap {
+    width: 11em;
+    border: 1px solid black;
+    word-break: keep-all; /* Akkor sem töri el a szót, ha nem fér ki - négyzetből kifut*/
+}
+
+p.word-break-1 {
+    width: 140px;
+    border: 1px solid black;
+    word-break: keep-all; 
+}
+/* Pixeles szélesség esetén hiába mondjuk, hogy keep-all, a kötőjeleknél el fogja törni*/
+
+p.word-break-2 {
+    width: 140px;
+    border: 1px solid black;
+    word-break: break-all; /*Mindenhol tör, akár szavak közben is (nem elválasztójelez) */ 
+}
+
+p.writing-mode-1 {
+    writing-mode: horizontal-tb; /* alapértelmezett (?) */
+}
+
+span.writing-mode-2 {
+    writing-mode: vertical-rl; /* fentről lefelé, balról jobbra olvasható szöveg */
+}
+
+p.writing-mode-2 {
+    writing-mode: vertical-rl; /* Teljes sorra is vonatkoztatható */
+}
+
+/* 2.13. - 2d átalakítások */
+div:not(container) {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.7);
+    border: 1px solid black;
+    box-shadow: 0 0 3px;
+}
+
+.translate {
+    transform: translate(50px, 10px);
+    margin: 50px 0;
+}
+
+.rotate {
+    transform: rotate(20deg);
+    margin: 50px 0;
+}
+
+.scale {
+    transform: scale(2,1.5);
+    margin: 50px 0;
+}
+
+.matrix {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    margin: 50px 0;
+}

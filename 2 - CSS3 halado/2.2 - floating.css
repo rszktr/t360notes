@@ -1,0 +1,31 @@
+/* *= minden elemre igaz */
+* {
+    box-sizing: border-box;
+}
+
+.img-container {
+    float: left; /* képek sorrendisége, honnan számolja az első képet*/
+    width: 33.3%;
+    padding: 5px;
+}
+/* Férjen el 3 kép egymás mellett*/
+
+img {
+    width: 100%;
+}
+
+/* clearfix - elem után közvetlen ne tudjon jönni más, új lapot, új sort indít */
+.clearfix {
+    background-color: aqua;
+    display: inline-block; /* elv nem teljes szélességű, elfér mellette tartalom. inline teljes szélességű.*/
+}
+
+/*Ha semmiképp nem akarjuk, hogy mellette legyen valami akkor csinálhatunk 
+még 1 más osztályú clearfixet inline-block megjelenítéssel */
+
+/* ::after - pszeudoelem, virtuálisan az elem utáni közvetlen elhagyás */
+.clearfix::after {
+    content: "";
+    clear: both; /* fenn és lenn is üres legyen */
+    display: table; /*régi böngészők miatt */
+}
