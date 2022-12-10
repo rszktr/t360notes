@@ -1,0 +1,5 @@
+@use '../variables/colors\ -\ 5.4.14' as colors;
+@use '../mixins/backgrounds\ -\ 5.4.14' as backgrounds;
+
+@include backgrounds.generate-colored-backgrounds(colors.$color-palette);
+@include backgrounds.generate-lighter-colored-backgrounds(colors.$color-palette, colors.$lighter-colors);

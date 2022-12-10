@@ -1,0 +1,9 @@
+@use '../variables/colors\ -\ 5.4.5' as colors;
+@use '../mixins/texts\ -\ 5.4.12' as texts;
+
+.text {
+  font: 1rem/1.5 Arial, Helvetica;
+  padding: 1rem 0;
+}
+
+@include texts.generate-colored-texts(colors.$color-palette);

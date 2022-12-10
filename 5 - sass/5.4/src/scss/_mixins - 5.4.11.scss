@@ -1,0 +1,21 @@
+@mixin generate-colored-texts($palette) {
+
+  @each $key,
+  $value in $palette {
+    .text--#{"" + $key} {
+      color: $value;
+    }
+  }
+
+}
+
+@mixin generate-colored-backgrounds($palette) {
+
+  @each $key,
+  $value in $palette {
+    .background--#{"" + $key} {
+      background-color: $value;
+    }
+  }
+
+}

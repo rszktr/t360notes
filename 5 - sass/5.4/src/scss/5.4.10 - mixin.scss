@@ -1,0 +1,10 @@
+@use 'mixins - 5.4.10' as mixins;
+@use 'colors - 5.4.5' as colors;
+@use "sass:map";
+
+.text {
+  font: 1rem/1.5 Arial, Helvetica;
+  padding: 1rem 0;
+}
+
+@include mixins.generate-colored-texts(colors.$color-palette);

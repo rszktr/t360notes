@@ -1,0 +1,33 @@
+@use "sass:list";
+
+$padding: .5rem, 1rem, 2rem;
+
+@debug list.nth($padding, 2);
+// 1 rem - a listának a második elemét adja vissza
+
+@debug list.append($padding, 3rem);
+// 0.5rem, 1rem, 2rem, 3rem
+
+@debug $padding;
+// 0.5rem, 1rem, 2rem - az eredeti lista nem módosult
+
+$padding: list.append($padding, 3rem);
+@debug $padding;
+// 0.5rem, 1rem, 2rem, 3rem
+
+@debug list.length($padding);
+// 4 
+
+@debug list.separator($padding);
+// comma
+
+@debug list.join($padding, 4rem 5rem);
+// 0.5rem, 1rem, 2rem, 3rem, 4rem, 5rem (vesszőket automatikusan hozzáadja)
+
+@debug list.join($padding, (4rem, 5rem));
+// alternatíva az előzőre. !! Egyik sem módosítja az eredetit !!
+
+@debug $padding;
+
+@debug list.index($padding, 2rem);
+// 3 - a keresett érték a harmadik helyen szerepel. Ha nincs akkor null

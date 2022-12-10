@@ -1,0 +1,12 @@
+@use '../variables/colors\ -\ 5.4.24' as colors;
+@use '../mixins/texts\ -\ 5.4.19' as texts;
+@use '../functions/var.scss' as *;
+@use "sass:map";
+
+
+.text {
+  font: 1rem/1.5 Arial, Helvetica;
+  padding: 1rem 0;
+}
+
+@include texts.generate-colored-texts(map.merge(var(theme), var(base)));

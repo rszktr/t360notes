@@ -1,0 +1,11 @@
+@use '../variables/colors\ -\ 5.4.29' as colors;
+@use '../mixins/backgrounds\ -\ 5.4.30' as backgrounds;
+@use "sass:map";
+@use '../functions/var.scss' as *;
+@use '../functions/get-default-theme.scss' as *;
+
+
+$theme: get-default-theme();
+@include backgrounds.generate-colored-backgrounds($theme);
+@include backgrounds.generate-lighter-colored-backgrounds($theme, var(lighter));
+@include backgrounds.generate-darker-colored-backgrounds($theme, var(darker));

@@ -1,0 +1,3 @@
+@function get-column-width($column-count) {
+  @return 100% * $column-count / var(grid-size);
+}

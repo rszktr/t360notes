@@ -1,0 +1,15 @@
+@use "../variables/colors\ -\ 5.4.29"as colors;
+@use "get-keys" as *;
+@use "sass:map";
+
+@function var($string, $data: $config) {
+  $keys: get-keys($string);
+
+  @each $key in $keys {
+    $data: map-get($data, $key);
+  }
+
+  @return $data;
+}
+
+@debug var(themes-material);

@@ -1,0 +1,17 @@
+@mixin set-column-width1($viewport, $column-count) {
+  @if $viewport == var(column-postfix-default) {
+    $width: calc(100% * $column-count / var(grid-size));
+  } @else if $viewport == var(column-postfix-mobile) {
+    @include mobile-up {
+      width: $width;
+    }
+  } @else if $viewport == var(column-postfix-tablet) {
+    @include tablet-up {
+      width: $width;
+    }
+  } @else if $viewport == var(column-postfix-desktop) {
+    @include desktop-up {
+      width: $width;
+    }
+  }
+}

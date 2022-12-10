@@ -1,0 +1,254 @@
+.text {
+  font: 1rem/1.5 Arial, Helvetica;
+  padding: 1rem 0;
+}
+
+.text--primary {
+  color: #2196f3;
+}
+
+.text--secondary {
+  color: #607d8b;
+}
+
+.text--info {
+  color: #009688;
+}
+
+.text--success {
+  color: #4caf50;
+}
+
+.text--warning {
+  color: #ff9800;
+}
+
+.text--danger {
+  color: #e91e63;
+}
+
+.text--black {
+  color: #222;
+}
+
+.text--white {
+  color: #efefef;
+}
+
+.background--primary {
+  background-color: #2196f3;
+}
+
+.background--secondary {
+  background-color: #607d8b;
+}
+
+.background--info {
+  background-color: #009688;
+}
+
+.background--success {
+  background-color: #4caf50;
+}
+
+.background--warning {
+  background-color: #ff9800;
+}
+
+.background--danger {
+  background-color: #e91e63;
+}
+
+.background--lighter-primary-5 {
+  background-color: #39a1f4;
+}
+
+.background--lighter-primary-10 {
+  background-color: #51adf6;
+}
+
+.background--lighter-primary-15 {
+  background-color: #6ab8f7;
+}
+
+.background--lighter-primary-20 {
+  background-color: #82c4f8;
+}
+
+.background--lighter-secondary-5 {
+  background-color: #6b8a99;
+}
+
+.background--lighter-secondary-10 {
+  background-color: #7b96a3;
+}
+
+.background--lighter-secondary-15 {
+  background-color: #8aa2ae;
+}
+
+.background--lighter-secondary-20 {
+  background-color: #99aeb8;
+}
+
+.background--lighter-info-5 {
+  background-color: #00b09f;
+}
+
+.background--lighter-info-10 {
+  background-color: #00c9b6;
+}
+
+.background--lighter-info-15 {
+  background-color: #00e3cd;
+}
+
+.background--lighter-info-20 {
+  background-color: #00fce4;
+}
+
+.background--lighter-success-5 {
+  background-color: #5cb860;
+}
+
+.background--lighter-success-10 {
+  background-color: #6ec071;
+}
+
+.background--lighter-success-15 {
+  background-color: #80c883;
+}
+
+.background--lighter-success-20 {
+  background-color: #92cf94;
+}
+
+.background--lighter-warning-5 {
+  background-color: #ffa21a;
+}
+
+.background--lighter-warning-10 {
+  background-color: #ffad33;
+}
+
+.background--lighter-warning-15 {
+  background-color: #ffb74d;
+}
+
+.background--lighter-warning-20 {
+  background-color: #ffc166;
+}
+
+.background--lighter-danger-5 {
+  background-color: #eb3573;
+}
+
+.background--lighter-danger-10 {
+  background-color: #ee4c83;
+}
+
+.background--lighter-danger-15 {
+  background-color: #f06493;
+}
+
+.background--lighter-danger-20 {
+  background-color: #f27ba3;
+}
+
+.background--darker-primary-5 {
+  background-color: #0d8aee;
+}
+
+.background--darker-primary-10 {
+  background-color: #0c7cd5;
+}
+
+.background--darker-primary-15 {
+  background-color: #0a6ebd;
+}
+
+.background--darker-primary-20 {
+  background-color: #0960a5;
+}
+
+.background--darker-secondary-5 {
+  background-color: #566f7c;
+}
+
+.background--darker-secondary-10 {
+  background-color: #4b626d;
+}
+
+.background--darker-secondary-15 {
+  background-color: #41545e;
+}
+
+.background--darker-secondary-20 {
+  background-color: #36474f;
+}
+
+.background--darker-info-5 {
+  background-color: #007d71;
+}
+
+.background--darker-info-10 {
+  background-color: #00635a;
+}
+
+.background--darker-info-15 {
+  background-color: #004a43;
+}
+
+.background--darker-info-20 {
+  background-color: #00302c;
+}
+
+.background--darker-success-5 {
+  background-color: #449d48;
+}
+
+.background--darker-success-10 {
+  background-color: #3d8b40;
+}
+
+.background--darker-success-15 {
+  background-color: #357a38;
+}
+
+.background--darker-success-20 {
+  background-color: #2d682f;
+}
+
+.background--darker-warning-5 {
+  background-color: #e68900;
+}
+
+.background--darker-warning-10 {
+  background-color: #cc7a00;
+}
+
+.background--darker-warning-15 {
+  background-color: #b36a00;
+}
+
+.background--darker-warning-20 {
+  background-color: #995b00;
+}
+
+.background--darker-danger-5 {
+  background-color: #d81558;
+}
+
+.background--darker-danger-10 {
+  background-color: #c1134e;
+}
+
+.background--darker-danger-15 {
+  background-color: #aa1145;
+}
+
+.background--darker-danger-20 {
+  background-color: #930e3b;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+$config: (
+  grid: (
+    size: 12,
+    breakpoint: (
+      mobile: 640px,
+      tablet: 960px,
+      desktop: 1280px,
+    ),
+  ),
+  container: (
+    classname: container,
+    maxWidth: 1280px,
+    padding: (
+      default: 5px,
+      mobile: 6px,
+      tablet: 7.5px,
+      desktop: 9px,
+    ),
+  ),
+  column: (
+    classname: col,
+    postfix: (
+      default: xs,
+      // column--default-12
+      mobile: sm,
+      // column--mobile-6
+      tablet: md,
+      // column--tablet-4
+      desktop: lg,
+      // column--desktop-3
+    ),
+    padding: (
+      default: 10px,
+      mobile: 12px,
+      tablet: 15px,
+      desktop: 18px,
+    ),
+  ),
+);

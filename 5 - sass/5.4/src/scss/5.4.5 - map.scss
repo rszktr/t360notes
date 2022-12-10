@@ -1,0 +1,11 @@
+@use 'colors - 5.4.5' as colors;
+@use "sass:map";
+
+.text {
+  font: 1rem/1.5 Arial, Helvetica;
+  padding: 1rem 0;
+}
+
+.text--red {
+  color: map.get(colors.$color-palette, red)
+}

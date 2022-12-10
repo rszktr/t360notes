@@ -1,0 +1,11 @@
+@use 'sass:color';
+
+@mixin btn-styled($modifier, $background) {
+  &--#{$modifier} {
+    background-color: $background;
+
+    &:hover {
+      background-color: color.scale($background, $lightness: -10%);
+    }
+  }
+}

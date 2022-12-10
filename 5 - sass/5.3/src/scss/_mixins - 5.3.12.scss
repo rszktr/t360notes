@@ -1,0 +1,9 @@
+@mixin btn-styled($modifier, $bakcground, $background-hover) {
+  &--#{$modifier} {
+    background-color: $background;
+
+    &:hover {
+      background-color: $background-hover;
+    }
+  }
+}

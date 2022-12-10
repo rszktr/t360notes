@@ -1,0 +1,109 @@
+// @debug műveletek eredménye megjelenik a konzolon
+@debug ----------EQUALITY -----------------------------------------------------;
+
+@debug 1px==1;
+@debug 1px==1px;
+
+@debug 10px==1cm;
+/* false */
+@debug 48px==0.5in;
+/*true*/
+@debug 0.999999999999999999999999==1;
+/*true*/
+
+@debug Arial=='Arial';
+@debug Arial=="Arial";
+@debug 'Arial'=="Arial";
+/* true, true, true */
+
+@debug true !=false;
+/* true */
+
+@debug ----------RELATIONS ----------------------------------------------------;
+
+@debug 100>50;
+@debug 10px < 17px;
+@debug 96px>=1in;
+@debug 10000ms <=10s;
+/* true, true, true, true */
+
+@debug ----------MATH ---------------------------------------------------------;
+
+@debug 10s+5s;
+@debug 10s - 50ms;
+@debug 10px * 2;
+@debug 10px * 2px;
+@debug 10px / 2;
+@debug 10px % 2;
+/* 15s, 9.95s, 20px, 20px*px, 10px/2, 0px */
+
+/* Osztás mértékegység esetén helyesen: */
+@debug calc(10px / 2);
+
+@debug ----------STRING --------------------------------------------------------;
+
+@debug "Times "+"New Roman";
+/* Times New Roman - de csak a konzolon van idézőjelek nélkül */
+
+.container::before {
+  font: "Times " + "New Roman", Times, serif;
+}
+
+/* font: "Times New Roman", Times, serif; */
+
+.container::before {
+  font: 16px/16px "Times " +"New Roman", Times, serif;
+}
+
+/* font: 16px/16px "Times New Roman", Times, serif; */
+
+.container::before {
+  font: 16px - 16px "Times " +"New Roman", Times, serif;
+}
+
+/* Egymásból kivonódnak. De akkor hogyan lehetne stringként értelmezni?
+... Itt megállt a tudomány. Haladjunk inkább tovább. */
+
+
+.container::before {
+  content: track - list;
+}
+
+/* content: track-list  */
+
+.container::before {
+  content: "track" - "list"
+}
+
+/* content: "track"-"list" */
+
+.container::before {
+  content: #{"track" - "list"}
+}
+
+/* content: "track"-"list" */
+
+.container::before {
+  content: #{"track" + "list"}
+}
+
+/* content: tracklist */
+
+$postfix: "--10";
+
+.col#{$postfix}::before {
+  content: #{"track" + "list"}
+}
+
+/* .col--10::before {
+  content: tracklist;
+} */
+
+@debug ----------BOOLEAN ------------------------------------------------------;
+
+@debug not true;
+/* false */
+@debug true and false;
+/* Ha az and bármelyik oldala false, akkor az egész false. */
+@debug true or false;
+/* Ha az or bármelyik oldala true, akkor az egész true */

@@ -1,0 +1,53 @@
+/* MAP: get, has-key, keys, merge, remove, values */
+
+@use "sass:map";
+/* Saját namespace. kötőjelezéses lehívás helyett pontos lehívást tesz lehetővé
+ többek között (lásd lentebb) */
+
+$colors: (
+  success: green,
+  warning: orange,
+  danger: red,
+);
+
+$base-colors: (
+  white: white,
+  black: black,
+);
+
+@debug map-get($map: $colors, $key: success);
+// green
+@debug map-get($colors, success);
+// green
+
+@debug map.get($colors, success);
+// green
+
+
+@debug map.has-key($colors, success);
+//true
+@debug map.keys($colors);
+//success, warning, danger
+
+
+@debug map.merge($colors, $base-colors);
+// (success: green, warning: orange, danger: red, white: black, black: black)
+
+$all-colors: map.merge($colors, $base-colors);
+@debug $all-colors;
+// (success: green, warning: orange, danger: red, white: white, black: black)
+
+
+@debug map.remove($colors, success);
+// (warning: orange, danger: red)
+
+@debug $colors;
+// (success: green, warning: orange, danger: red) - nem módosította az eredetit
+
+$colors: map.remove($colors, success);
+@debug $colors;
+// (warning: orange, danger: red)- eredeti módosult, felülírtuk. 
+
+
+@debug map.values($colors);
+// orange, red

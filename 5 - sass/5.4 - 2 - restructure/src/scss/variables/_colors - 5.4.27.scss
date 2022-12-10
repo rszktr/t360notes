@@ -1,0 +1,19 @@
+$colors: (
+  base: ("black": #222,
+    "white": #efefef),
+  themes: (material: (primary: #2196f3,
+      secondary: #607d8b,
+      info: #009688,
+      success: #4caf50,
+      warning: #ff9800,
+      danger: #e91e63,
+    ),
+    flatui: (primary: #2980b9,
+      secondary: #7f8c8d,
+      info: #1abc9c,
+      success: #27ae60,
+      warning: #f39c12,
+      danger: #c0392b,
+    )) lighter: 5 10 15 20,
+  darker: 5 10 15 20
+);

@@ -1,0 +1,14 @@
+@use "sass:map";
+
+@mixin generate-colored-texts($palette, $base-colors) {
+
+  $main-palette: map.merge($palette, $base-colors);
+
+  @each $key,
+  $value in $main-palette {
+    .text--#{"" + $key} {
+      color: $value;
+    }
+  }
+
+}
